@@ -1,5 +1,5 @@
-Working area	Index		Repository
-Lokalt		efter add	efter commit
+##Working area	Index		Repository
+##Lokalt	efter add	efter commit
 
 git checkout *branch* (Ändrar Working area, Index och Repository)
 
