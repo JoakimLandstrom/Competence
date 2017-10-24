@@ -42,6 +42,7 @@ git stash clear (Tar bort allt ifrån stashen)
 --Konflikter--  
 git add *fil* , git commit -m "konflikt" (Här betyder git add att du löst konflikten)
 
+
 --Historik--  
 git log (--graph --decorate --oneline, --patch = detaljerad per commit, --grep *ord* = enbart see commits med ordet, -G*ord* = la till eller tog bort detta ord, -3 se de senaste 3 commitsen)
 git log branch1..branch2 --online (Lista alla commits som är i branch2 men inte i branch1, dvs dessa skulle komma med vid en merge)
@@ -49,8 +50,14 @@ git show (detaljerad info om en commit, args = commit hash, eller en branch för
 git blame *fil* (Se vem som ändrat i en fil och när)
 git diff HEAD HEAD^2 (Se vad som ändrats mellan två commits)
 
+
 --Ändra historik--  
 git commit --amend (Lägger till nya saker från Index till Repository, kopierar senaste commiten i HEAD också till den nya commiten och gör en ny commit, dvs lägger till nya saker till senaste commiten)
+git rebase --interactive (Ändra commit meddelanden, ta bort commits, lägg ihop flera commits etc)
+git reflog *branch* (Allting som HEAD har pekat på, det som inte syns längre. Återställ data här!)
+git revert *commit* (Gör allting tvärtom från commiten, så om en rad lagts till tas den bort etc. Rör ej befintlig commit utan skapar en ny)
+
+
 
 
 
