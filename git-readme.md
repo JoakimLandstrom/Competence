@@ -1,7 +1,9 @@
 1. Working area | 2. Index | 3. Repository  
 1. Lokalt | 2. efter add | 3. efter commit
 
+--Branches--  
 git checkout *branch* (Ändrar Working area, Index och Repository)
+git push -u origin *local branch* (Pushar lokala branchen till remote repo)
 
 --Lägga till filer--  
 git add *fil* (Working area -> Index)
@@ -56,14 +58,3 @@ git commit --amend (Lägger till nya saker från Index till Repository, kopierar
 git rebase --interactive (Ändra commit meddelanden, ta bort commits, lägg ihop flera commits etc)
 git reflog *branch* (Allting som HEAD har pekat på, det som inte syns längre. Återställ data här!)
 git revert *commit* (Gör allting tvärtom från commiten, så om en rad lagts till tas den bort etc. Rör ej befintlig commit utan skapar en ny)
-
-
-
-
-
-
-
-
-
-
-
